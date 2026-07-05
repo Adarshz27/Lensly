@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  background: #020617;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+video, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+canvas {
+  pointer-events: none;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+select {
+  background: #0f172a;
+  color: white;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+button {
+  background: #16a34a;
+  color: white;
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 20px;
+}
