@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LENSLY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <video id="camera" autoplay playsinline></video>
+  <canvas id="overlay"></canvas>
+
+  <div class="controls">
+    <select id="category">
+      <option>Food</option>
+      <option>Nature</option>
+      <option>River</option>
+      <option>Temple</option>
+      <option>Building</option>
+      <option>Sky</option>
+      <option>Mountain</option>
+    </select>
+
+    <select id="overlayType">
+      <option value="auto">Auto (Smart)</option>
+      <option value="thirds">Rule of Thirds</option>
+      <option value="golden">Golden Ratio</option>
+      <option value="diagonal">Diagonal</option>
+      <option value="center">Center Frame</option>
+      <option value="symmetry">Symmetry</option>
+      <option value="leading">Leading Lines</option>
+      <option value="triangle">Triangle</option>
+      <option value="horizon">Horizon</option>
+      <option value="square">Square</option>
+      <option value="reels">Reels Safe</option>
+    </select>
+
+    <button id="capture">📸</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
